@@ -1,0 +1,209 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster|Bree+Serif);
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: sans-serif, Verdana;
+  font-size: 70%;
+  color: white;
+  background: #333;
+  width: 100%;
+  height: 100vh; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative; }
+
+header {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  padding-top: 10px; }
+
+.brand {
+  float: left;
+  color: #70C1B3;
+  font-weight: bold;
+  font-size: 2.4em; }
+  .brand ul li {
+    display: inline; }
+  .brand img {
+    width: 20px;
+    height: 20px; }
+
+.mainmenu {
+  float: right; }
+  .mainmenu li {
+    display: inline-block; }
+    .mainmenu li a {
+      font-size: 1.4em;
+      line-height: calc(50% + 1.4em);
+      font-weight: bolder;
+      border: 2px solid #70C1B3;
+      padding: 5px;
+      margin-left: 10px;
+      transition: background 0.24s; }
+      .mainmenu li a:hover {
+        background: #70C1B3; }
+  .mainmenu:after {
+    clear: both; }
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .main h1 {
+    font-family: Lobster;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #FFE066; }
+  .main h2 {
+    font-family: serif;
+    font-size: 1.8rem;
+    text-align: center; }
+
+.box {
+  margin-top: 40px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border: 10px solid transparent;
+  border-top-color: #F25F5C;
+  border-right-color: #FFE066;
+  border-bottom-color: #70C1B3;
+  border-left-color: #247BA0; }
+
+blockquote {
+  position: absolute;
+  top: 10%;
+  left: calc(50% - 200px);
+  padding: 32px 0;
+  width: 400px;
+  background: #333;
+  font-size: 1.2rem;
+  text-align: center; }
+  blockquote p {
+    font-weight: bold;
+    font-family: 'Bree Serif', Serif; }
+    blockquote p::before, blockquote p::after {
+      content: '"'; }
+  blockquote footer {
+    margin-top: 10px;
+    font-size: 1em; }
+
+.btn-group {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.btn {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  overflow: hidden;
+  width: 200px;
+  height: 40px;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center; }
+  .btn span, .btn i, .btn em {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .btn i, .btn em {
+    transition: top 0.4s; }
+  .btn i {
+    top: 0;
+    line-height: 40px; }
+  .btn em {
+    top: 100%;
+    line-height: 40px;
+    font-style: normal; }
+  .btn:hover i {
+    top: -100%; }
+  .btn:hover em {
+    top: 0; }
+
+#generate {
+  border: 2px solid #F25F5C;
+  color: #F25F5C; }
+  #generate:hover {
+    background: #F25F5C;
+    color: white; }
+
+#twitter {
+  border: 2px solid #70C1B3;
+  color: #70C1B3; }
+  #twitter:hover {
+    background: #70C1B3;
+    color: white; }
+
+.footer {
+  width: 100%;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 0; }
+  .footer p {
+    font-size: 1.57em;
+    text-align: center; }
+
+@media only screen and (max-width: 420px) {
+  header {
+    position: relative; }
+
+  .mainmenu span {
+    display: none; }
+
+  p {
+    font-size: 1.2rem; }
+
+  .main h1 {
+    font-size: 2rem; }
+  .main h2 {
+    font-size: 1rem;
+    text-align: center; }
+
+  .box {
+    width: 150px;
+    height: 150px; }
+
+  blockquote {
+    padding: 0;
+    position: absolute;
+    top: calc(-50% + 50px);
+    left: calc(50% - 50px);
+    width: 100px; }
+    blockquote p {
+      font-size: 1rem; }
+    blockquote cite {
+      font-size: 0.8rem; }
+
+  .btn-group {
+    margin-top: 70px;
+    margin-bottom: 50px; }
+
+  .btn {
+    margin-left: 10px; }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.4rem;
+    margin-bottom: 10px; } }
+
+/*# sourceMappingURL=main.css.map */
